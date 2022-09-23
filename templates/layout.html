@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="lv">
 <head>
-  <link rel="stylesheet" href="../static/stylesheet.css">
+    <link rel="stylesheet" href="../static/stylesheet.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +12,11 @@
 <body>
     <header>
         <div class="nav">
-            <a href="sakums.html">Sākums</a>
-            <a href="pavasaris.html">Pavasaris</a>
-            <a href="vasara.html">Vasara</a>
-            <a href="rudens.html">Rudens</a>
-            <a href="ziema.html">Ziema</a>
-        <div class="subnav">
+            <a href="/">Sākums</a>
+            <a {% if page == "pavasaris" %} class="active" {% endif %} href="/pavasaris">Pavasaris</a>
+            <a {% if page == "vasara" %} class="active" {% endif %} href="/vasara">Vasara</a>
+            <a {% if page == "rudens" %} class="active" {% endif %} href="/rudens">Rudens</a>
+            <a {% if page == "ziema" %} class="active" {% endif %} href="/ziema">Ziema</a>
           
     </header>
   <section>

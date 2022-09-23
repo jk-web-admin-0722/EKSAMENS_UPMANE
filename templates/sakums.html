@@ -9,4 +9,30 @@
 
 <p>Latviešu kalendārā gadu sākotnēji iedalīja tikai divos laikos — ziemas laikā, par kura sākumu uzskatīja apjumības un beigām — Ūsiņus, un vasaras laikā, par kura sākumu uzskatīja Ūsiņus un beigām — apjumības. Vēlāk kā atsevišķu gadalaiku sāka izšķirt arī vasaras sākumu — pavasari, ko pēc latviešu vēsturnieka Arveda Švābes domām dažviet jau pazina ap 13. gadsimtu. Savukārt rudens (vietumis saukts arī par paziemu) kā ceturtais gadalaiks varētu būt sākts izdalīts ap 15.—17. gadsimtu</p>
 <p>Avots: vecā, labā <a href="https://lv.wikipedia.org/wiki/Gadalaiks">Vikipēdija</a></p>
+
+<div class="ak">
+<h2>Aicinu piedalīties aptaujā par gadalaikiem</h2>
+<form action='/' method="POST">
+    {% if message %}
+    <h3>{{ message }}</h3>
+    {% endif %}
+    
+    <fieldset>
+        <label for="faveseason"><p>Kurš ir Tavs mīļākais gadalaiks?</p><input id="faveseason" name="faveseason" type="text" required><br>
+        <p>Ja turpmāk būtu tikai trīs gadalaiki, no kura Tu atteiktos?</p>
+        <label for="pavasaris"><input name="cutseason" type="radio" id="Pavasaris" required>No pavasara</label><br>
+        <label for="vasara"><input name="cutseason" type="radio" id="Vasara">No vasaras</label><br>
+        <label for="rudens"><input name="cutseason" type="radio" id="Rudens">No rudens</label><br>
+        <label for="ziema"><input name="cutseason" type="radio" id="Ziema">No ziemas</label><br>
+    </fieldset>
+    <input type="submit" value="Atbildēt">
+</form>
+</div>
+    
+<div class="ak">
+    <span>
+        <h2>Noskaties video par gadalaikiem</h2>
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/DD_8Jm5pTLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </span>
+</div>
 {% endblock %}

@@ -1,9 +1,19 @@
 from flask import Flask, render_template, request
 app = Flask(__name__)
 
-@app.route('/')
-def home():
-   return render_template('sakums.html')
+@app.route('/', methods = ['GET', 'POST'])
+def sakums():
+    msg = ""
+    if request.method == 'POST':
+        faveseason = request.form.get('faveseason')
+        cutseason = request.form.get('cutseason')
+        line = f"{faveseason},{cutseason}\n"
+        with open("aptaujas_rez.csv", "a", encoding="utf-8") as f:
+            f.write(line)
+
+        msg = "Paldies par dalību aptaujā!"
+
+    return render_template('sakums.html', message = msg)
 
 @app.route('/pavasaris')
 def pavasaris():
