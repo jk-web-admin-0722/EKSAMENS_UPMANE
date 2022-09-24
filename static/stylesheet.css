@@ -70,3 +70,13 @@ div.desc {
   text-align: center;
   background-color: white;
 }
+
+.atbildes {
+  padding: 15px;
+  text-align:center;
+}
+
+table.atbildes {
+  position: absolute;
+  width: 100%
+}

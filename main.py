@@ -6,13 +6,14 @@ def sakums():
     msg = ""
     if request.method == 'POST':
         faveseason = request.form.get('faveseason')
+        faveseasonwhy = request.form.get('faveseasonwhy')
         cutseason = request.form.get('cutseason')
-        line = f"{faveseason},{cutseason}\n"
+        cutseasonwhy = request.form.get('cutseasonwhy')
+        line = f"{faveseason},{faveseasonwhy},{cutseason},{cutseasonwhy}\n"
         with open("aptaujas_rez.csv", "a", encoding="utf-8") as f:
             f.write(line)
 
         msg = "Paldies par dalību aptaujā!"
-
     return render_template('sakums.html', message = msg)
 
 @app.route('/pavasaris')

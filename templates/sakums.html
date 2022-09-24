@@ -19,11 +19,9 @@
     
     <fieldset>
         <label for="faveseason"><p>Kurš ir Tavs mīļākais gadalaiks?</p><input id="faveseason" name="faveseason" type="text" required><br>
-        <p>Ja turpmāk būtu tikai trīs gadalaiki, no kura Tu atteiktos?</p>
-        <label for="pavasaris"><input name="cutseason" type="radio" id="Pavasaris" required>No pavasara</label><br>
-        <label for="vasara"><input name="cutseason" type="radio" id="Vasara">No vasaras</label><br>
-        <label for="rudens"><input name="cutseason" type="radio" id="Rudens">No rudens</label><br>
-        <label for="ziema"><input name="cutseason" type="radio" id="Ziema">No ziemas</label><br>
+        <label for="faveseasonwhy"><p>Kas šajā gadalaikā Tev patīk visvairāk?</p><input id="faveseasonwhy" name="faveseasonwhy" type="text" required><br>
+        <label for="cutseason"><p>Kurš gadalaiks Tev patīk vismazāk?</p><input id="cutseason" name="cutseason" type="text" required><br>
+        <label for="cutseasonwhy"><p>Kāpēc šis gadalaiks Tev nepatīk?</p><input id="cutseasonwhy" name="cutseasonwhy" type="text" required><br>
     </fieldset>
     <input type="submit" value="Atbildēt">
 </form>
@@ -35,4 +33,5 @@
         <iframe width="500" height="315" src="https://www.youtube.com/embed/DD_8Jm5pTLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </span>
 </div>
+
 {% endblock %}
